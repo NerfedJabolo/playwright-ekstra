@@ -1,0 +1,30 @@
+{
+  "name": "siseveeb-playwright-tests",
+  "version": "1.0.0",
+  "description": "Playwrighti testid VoCo siseveebile: sisselogimine, õpilase ja õpetajate tunniplaan, lokaatorid, laadimisaeg, veateated",
+  "main": "index.js",
+  "scripts": {
+    "test": "PLAYWRIGHT_BROWSERS_PATH=${PLAYWRIGHT_BROWSERS_PATH:-$PWD/.playwright-browsers} playwright test",
+    "test:headed": "PLAYWRIGHT_BROWSERS_PATH=${PLAYWRIGHT_BROWSERS_PATH:-$PWD/.playwright-browsers} playwright test --headed",
+    "test:ui": "PLAYWRIGHT_BROWSERS_PATH=${PLAYWRIGHT_BROWSERS_PATH:-$PWD/.playwright-browsers} playwright test --ui",
+    "test:report": "playwright show-report",
+    "install:browsers": "PLAYWRIGHT_BROWSERS_PATH=${PLAYWRIGHT_BROWSERS_PATH:-$PWD/.playwright-browsers} playwright install chromium",
+    "test:public": "PLAYWRIGHT_BROWSERS_PATH=${PLAYWRIGHT_BROWSERS_PATH:-$PWD/.playwright-browsers} playwright test tests/ui/03-lokaatorid.spec.js tests/ui/04-laadimisaeg.spec.js tests/ui/05-login-vead.spec.js"
+  },
+  "keywords": [
+    "playwright",
+    "e2e",
+    "ui-testing",
+    "siseveeb",
+    "voco"
+  ],
+  "author": "Sten",
+  "license": "ISC",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.0"
+  }
+}

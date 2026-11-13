@@ -1,0 +1,17 @@
+[
+  {
+    "test": "TC-04a",
+    "leht": "konto/sisselogimine",
+    "url": "https://konto.siseveeb.voco.ee/?redirect_uri=https://opilane.siseveeb.voco.ee/",
+    "ttfbMs": 12.8,
+    "domContentLoadedMs": 893.6,
+    "loadMs": 1142.7,
+    "appReadyMs": 1447,
+    "scriptMs": 314.1,
+    "taskMs": 982.8,
+    "jsHeapMb": 18.3,
+    "ressursse": 8,
+    "üleKantudKb": 2946.1,
+    "mõõdetud": "2026-11-13T05:28:09.622Z"
+  }
+]
